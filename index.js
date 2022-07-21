@@ -1,7 +1,7 @@
 var str1 = "";
 var str2 = "";
 alert(
-  "Welocome To The Simon Game!!!\n• There is only one rule to win the game ,'Just Remeber the blinked TILES'.\n• When you start the game a TILE will blink, you have to press the same TILE.\n• In next level again a TILE will blink, press both level 1st & 2nd TILES,in same order.\n• In each next Level, You have to press the tiles in same sequence they have blinked previously,till now.\n• See how many levels you clear ,and compare your remeberence with your friends.\n• Press Ok! to continue...\n\n\n• REMEMBER, To restart Game press 'CTRL+R'."
+  "Welocome To The Simon Game!!!\n• There is only one rule to win the game ,'Just Remeber the blinked TILES'.\n• When you start the game a TILE will blink, you have to press the same TILE.\n• In next level again a TILE will blink, press both level 1st & 2nd TILES,in same order.\n• In each next Level, You have to press the tiles in same sequence they have blinked previously,till now.\n• See how many levels you clear ,and compare your remeberence with your friends.\n• Press Ok! to continue...ClickOn 'S' to Start...\n\n\n• REMEMBER, To restart Game press 'CTRL+R'."
 );
 $("body").keydown(function (e) {
   if (e.key === "s" || e.key === "S") {
@@ -82,7 +82,7 @@ function makeFlash(id) {
 }
 
 function gameover() {
-  $("#level-title").text("Game Over, Press [Ctrl+R] Key to Restart");
+  $("#level-title").text("Game Over, Press [Ctrl+R] or 'Refresh Page' to Restart");
   $("body").addClass("game-over");
   setTimeout(function () {
     $("body").removeClass("game-over");
