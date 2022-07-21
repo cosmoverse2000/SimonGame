@@ -24,6 +24,10 @@ a:visited {
 a:hover {
   color: red;
 }
+
+#s{
+  text-decoration: underline;
+}
 .container {
   display: block;
   width: 50%;
